@@ -151,4 +151,242 @@
         <section id="use-cases" class="pt-16 -mt-16 mb-12">
             <h2 class="text-3xl font-bold text-slate-900 mb-4">מקרי שימוש לשיפור אימוץ CRM</h2>
             <p class="text-lg text-slate-600 max-w-4xl mb-8">
-                אחד האתגרים הגדולים בארגונים הוא אימוץ נמוך של מערכות CRM. סוכני AI יכולים להפוך את ה-CRM מכלי רישום פסיבי לשותף
+                אחד האתגרים הגדולים בארגונים הוא אימוץ נמוך של מערכות CRM. סוכני AI יכולים להפוך את ה-CRM מכלי רישום פסיבי לשותף מכירות אקטיבי על ידי אוטומציה של משימות מנהליות והדגמת ערך מיידי.
+            </p>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="w-full md:w-1/3">
+                    <div id="use-case-tabs" class="flex md:flex-col flex-wrap gap-2">
+                        <button class="use-case-tab text-right w-full px-4 py-3 rounded-lg font-semibold tab-active" data-target="uc-1">הסמכת לידים אוטומטית</button>
+                        <button class="use-case-tab text-right w-full px-4 py-3 rounded-lg font-semibold tab-inactive" data-target="uc-2">אימון מכירות בזמן אמת</button>
+                        <button class="use-case-tab text-right w-full px-4 py-3 rounded-lg font-semibold tab-inactive" data-target="uc-3">עדכוני CRM פרואקטיביים</button>
+                        <button class="use-case-tab text-right w-full px-4 py-3 rounded-lg font-semibold tab-inactive" data-target="uc-4">יצירת הצעות מחיר</button>
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3">
+                    <div id="use-case-content" class="bg-white p-6 rounded-lg shadow-md min-h-[350px]">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="platforms" class="pt-16 -mt-16 mb-12">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">ניתוח השוואתי: פלטפורמות סוכני AI ארגוניות</h2>
+             <p class="text-lg text-slate-600 max-w-4xl mb-8">
+                בעוד Salesforce Agentforce מציעה פתרון חזק ומשולב, קיימות פלטפורמות ארגוניות מובילות אחרות. התרשים הבא משווה בין הפלטפורמות על בסיס קריטריונים קריטיים לארגונים גלובליים, ומדגיש את החוזקות הייחודיות של כל אחת.
+            </p>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                 <div class="chart-container">
+                    <canvas id="platformComparisonChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="governance" class="pt-16 -mt-16 mb-12">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">ממשל, אבטחה ושיקולים אתיים</h2>
+            <p class="text-lg text-slate-600 max-w-4xl mb-8">
+                עבור ארגון גלובלי, הטמעת מסגרת ממשל AI מקיפה היא קריטית. גישה פרואקטיבית זו מפחיתה סיכונים כמו פרצות נתונים, נזק למוניטין והפרעות תפעוליות, ומבטיחה פריסה אחראית ואמינה.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-slate-800 mb-3">שיטות עבודה מומלצות לממשל</h3>
+                    <ul class="space-y-2 text-slate-600 list-disc pl-5">
+                        <li>**נראות והבנה (Observability):** ניטור סביבות סוכני AI, הבנת החלטותיהם ואינטראקציותיהם.</li>
+                        <li>**זיהוי ומניעה (Posture Management):** זיהוי פגיעויות, תצורות שגויות והפרות מדיניות לפני הפריסה.</li>
+                        <li>**תגובה (Detection & Response):** חקירה והפחתה מהירה של איומים פוטנציאליים.</li>
+                        <li>**הערכה מתמשכת:** בחינת תכנון, היגיון, שימוש בכלים, זיכרון וחוסן של סוכנים באופן רציף.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-slate-800 mb-3">פרוטוקולי "אדם בלולאה" (Human-in-the-Loop)</h3>
+                     <ul class="space-y-2 text-slate-600 list-disc pl-5">
+                        <li>**מובנה בעיצוב:** יש לבנות נתיבי חזרה ברורים לסוכנים אנושיים עם פרוטוקולי מסירה חלקים.</li>
+                        <li>**הגברה, לא החלפה:** יש למסגר את ה-AI ככלי לשיפור היכולות האנושיות, לא כתחליף.</li>
+                        <li>**פיקוח אתי:** יש לוודא שהמערכות פועלות בהתאם לעקרונות אתיים של הגינות, שקיפות ואי-אפליה.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="recommendations" class="pt-16 -mt-16">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">המלצות אסטרטגיות ליישום ואימוץ</h2>
+            <p class="text-lg text-slate-600 max-w-4xl mb-8">
+                יישום מוצלח של סוכני AI דורש גישה הוליסטית המשלבת טכנולוגיה מתקדמת עם אסטרטגיה ארגונית ברורה ומסגרת ממשל חזקה.
+            </p>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                 <ul class="space-y-4 text-slate-600">
+                    <li class="flex items-start">
+                        <span class="text-teal-500 mr-3 mt-1">➔</span>
+                        <div>
+                            <h4 class="font-semibold text-slate-800">גישה מדורגת לפריסה</h4>
+                            <p>יש להתחיל עם היקף מוגדר וברור, לבצע פיילוט צר ובעל השפעה גבוהה, ולהתקדם מסוכנים פנימיים לסוכנים חיצוניים כדי לבנות אמון ולהוכיח ערך.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-teal-500 mr-3 mt-1">➔</span>
+                        <div>
+                            <h4 class="font-semibold text-slate-800">מקסום החזר השקעה (ROI)</h4>
+                            <p>יש להתמקד במשימות בעלות ערך גבוה וחוזרות על עצמן, למנף השקעות קיימות (כמו Salesforce), ולעקוב אחר מדדים כמותיים ואיכותיים כאחד.</p>
+                        </div>
+                    </li>
+                     <li class="flex items-start">
+                         <span class="text-teal-500 mr-3 mt-1">➔</span>
+                        <div>
+                            <h4 class="font-semibold text-slate-800">טיפוח תרבות של אימוץ AI</h4>
+                            <p>יש למסגר את ה-AI ככלי להגברת היכולות האנושיות, לספק הכשרה מקיפה, לעודד ניסויים וליישם פרוטוקולי "אדם בלולאה" חזקים.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const useCaseData = {
+                "uc-1": {
+                    title: "הסמכה וטיפוח לידים אוטומטיים",
+                    content: `
+                        <p class="mb-4">סוכני AI יכולים לנהל שיחות בזמן אמת עם לקוחות פוטנציאליים, לשאול שאלות הסמכה מתוחכמות, ולהזין נתונים עשירים ישירות ל-CRM. זה מבטיח שצוות המכירות מקבל לידים איכותיים ומוכנים לפעולה.</p>
+                        <h4 class="font-semibold mb-2">השפעה על אימוץ CRM:</h4>
+                        <p>מפחית את נטל הזנת הנתונים הידנית ומבטיח שה-CRM מכיל לידים איכותיים, מה שמגביר את ערכו הנתפס בעיני נציגי המכירות.</p>
+                    `
+                },
+                "uc-2": {
+                    title: "אימון מכירות בזמן אמת",
+                    content: `
+                        <p class="mb-4">סוכן AI יכול להצטרף לשיחות מכירה, לנתח את האינטראקציה מול נתוני ה-CRM, ולספק משוב והכוונה בזמן אמת לנציג המכירות. זה הופך את ה-CRM לכלי לפיתוח מיומנויות מתמשך.</p>
+                        <h4 class="font-semibold mb-2">השפעה על אימוץ CRM:</h4>
+                        <p>הופך את ה-CRM לכלי מרכזי לפיתוח מיומנויות ושיפור ביצועים, מה שמועיל ישירות לנציגי המכירות ומעודד שימוש קבוע.</p>
+                    `
+                },
+                "uc-3": {
+                    title: "עדכוני CRM פרואקטיביים",
+                    content: `
+                       <p class="mb-4">אחד החסמים הגדולים לאימוץ CRM הוא הנטל של הזנת נתונים ידנית. סוכן AI יכול להאזין לשיחות, לסרוק מיילים, ולעדכן אוטומטית רשומות, פעילויות והערות ב-CRM.</p>
+                        <h4 class="font-semibold mb-2">השפעה על אימוץ CRM:</h4>
+                        <p>מפחית משמעותית את הזנת הנתונים הידנית, מבטיח רעננות ודיוק נתונים, ובונה אמון ב-CRM כמקור מידע אמין.</p>
+                    `
+                },
+                 "uc-4": {
+                    title: "יצירת הצעות מחיר ומסמכים",
+                    content: `
+                       <p class="mb-4">סוכני AI יכולים לייעל באופן דרמטי את יצירת הצעות המכירה, החוזים ומסמכים אחרים, ולשחרר את נציגי המכירות ממשימות אדמיניסטרטיביות.</p>
+                        <h4 class="font-semibold mb-2">השפעה על אימוץ CRM:</h4>
+                        <p>משחרר את זמן נציגי המכירות ממשימות אדמיניסטרטיביות ומאפשר להם להתמקד במכירה; מרכז חומרי מכירה בתוך ה-CRM לגישה קלה.</p>
+                    `
+                }
+            };
+
+            const useCaseTabs = document.querySelectorAll('.use-case-tab');
+            const useCaseContent = document.getElementById('use-case-content');
+            
+            function updateUseCaseContent(targetId) {
+                const data = useCaseData[targetId];
+                useCaseContent.innerHTML = `
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">${data.title}</h3>
+                    ${data.content}
+                `;
+            }
+
+            useCaseTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    useCaseTabs.forEach(t => {
+                        t.classList.remove('tab-active');
+                        t.classList.add('tab-inactive');
+                    });
+                    tab.classList.add('tab-active');
+                    tab.classList.remove('tab-inactive');
+                    updateUseCaseContent(tab.dataset.target);
+                });
+            });
+
+            const platformComparisonCtx = document.getElementById('platformComparisonChart').getContext('2d');
+            new Chart(platformComparisonCtx, {
+                type: 'radar',
+                data: {
+                    labels: ['אבטחה וממשל', 'יכולת הרחבה', 'אינטגרציה', 'התאמה אישית', 'אוטונומיה'],
+                    datasets: [{
+                        label: 'Salesforce Agentforce',
+                        data: [8, 9, 10, 8, 9],
+                        fill: true,
+                        backgroundColor: 'rgba(20, 184, 166, 0.2)',
+                        borderColor: 'rgb(20, 184, 166)',
+                        pointBackgroundColor: 'rgb(20, 184, 166)',
+                    }, {
+                        label: 'Beam AI',
+                        data: [10, 8, 7, 7, 10],
+                        fill: true,
+                        backgroundColor: 'rgba(59, 130, 246, 0.2)',
+                        borderColor: 'rgb(59, 130, 246)',
+                        pointBackgroundColor: 'rgb(59, 130, 246)',
+                    }, {
+                        label: 'Zenity (אבטחה)',
+                        data: [10, 7, 8, 3, 3],
+                        fill: true,
+                        backgroundColor: 'rgba(245, 158, 11, 0.2)',
+                        borderColor: 'rgb(245, 158, 11)',
+                        pointBackgroundColor: 'rgb(245, 158, 11)',
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    elements: {
+                        line: {
+                            borderWidth: 3
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: {
+                                font: {
+                                    family: "'Assistant', sans-serif",
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        r: {
+                            angleLines: {
+                                display: true
+                            },
+                            suggestedMin: 0,
+                            suggestedMax: 10,
+                             pointLabels: {
+                                font: {
+                                    size: 12,
+                                    family: "'Assistant', sans-serif"
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 80) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active-nav');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active-nav');
+                    }
+                });
+            });
+
+            updateUseCaseContent('uc-1');
+        });
+    </script>
+
+</body>
+</html>
